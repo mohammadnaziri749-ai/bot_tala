@@ -1,0 +1,9 @@
+services:
+  bot:
+    build: .
+    container_name: atabak_gold_bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "3000:3000"
